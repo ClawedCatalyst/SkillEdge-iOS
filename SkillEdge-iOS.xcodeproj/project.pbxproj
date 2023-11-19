@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22C73BF02B0A84370003840C /* SkillEdge_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */; };
+		22C73BF22B0A84370003840C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BF12B0A84370003840C /* ContentView.swift */; };
+		22C73BF42B0A84390003840C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C73BF32B0A84390003840C /* Assets.xcassets */; };
+		22C73BF72B0A84390003840C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C73BF62B0A84390003840C /* Preview Assets.xcassets */; };
+		22C73C012B0A84390003840C /* SkillEdge_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73C002B0A84390003840C /* SkillEdge_iOSTests.swift */; };
+		22C73C0B2B0A84390003840C /* SkillEdge_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73C0A2B0A84390003840C /* SkillEdge_iOSUITests.swift */; };
+		22C73C0D2B0A84390003840C /* SkillEdge_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73C0C2B0A84390003840C /* SkillEdge_iOSUITestsLaunchTests.swift */; };
+		22C73C1A2B0A847E0003840C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 22C73C192B0A847E0003840C /* .gitignore */; };
+		22C73C1E2B0A87350003840C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73C1D2B0A87350003840C /* SplashScreenView.swift */; };
+		22C73C202B0A8B680003840C /* onBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73C1F2B0A8B680003840C /* onBoardingScreen.swift */; };
+		22C73C242B0A91240003840C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73C232B0A91240003840C /* LoginScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22C73BFD2B0A84390003840C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22C73BE42B0A84370003840C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C73BEB2B0A84370003840C;
+			remoteInfo = "SkillEdge-iOS";
+		};
+		22C73C072B0A84390003840C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22C73BE42B0A84370003840C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C73BEB2B0A84370003840C;
+			remoteInfo = "SkillEdge-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22C73BEC2B0A84370003840C /* SkillEdge-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkillEdge-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSApp.swift; sourceTree = "<group>"; };
+		22C73BF12B0A84370003840C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22C73BF32B0A84390003840C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22C73BF62B0A84390003840C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22C73BFC2B0A84390003840C /* SkillEdge-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C73C002B0A84390003840C /* SkillEdge_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSTests.swift; sourceTree = "<group>"; };
+		22C73C062B0A84390003840C /* SkillEdge-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C73C0A2B0A84390003840C /* SkillEdge_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSUITests.swift; sourceTree = "<group>"; };
+		22C73C0C2B0A84390003840C /* SkillEdge_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22C73C192B0A847E0003840C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		22C73C1D2B0A87350003840C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		22C73C1F2B0A8B680003840C /* onBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingScreen.swift; sourceTree = "<group>"; };
+		22C73C232B0A91240003840C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22C73BE92B0A84370003840C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C73BF92B0A84390003840C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C73C032B0A84390003840C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22C73BE32B0A84370003840C = {
+			isa = PBXGroup;
+			children = (
+				22C73C192B0A847E0003840C /* .gitignore */,
+				22C73BEE2B0A84370003840C /* SkillEdge-iOS */,
+				22C73BFF2B0A84390003840C /* SkillEdge-iOSTests */,
+				22C73C092B0A84390003840C /* SkillEdge-iOSUITests */,
+				22C73BED2B0A84370003840C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22C73BED2B0A84370003840C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22C73BEC2B0A84370003840C /* SkillEdge-iOS.app */,
+				22C73BFC2B0A84390003840C /* SkillEdge-iOSTests.xctest */,
+				22C73C062B0A84390003840C /* SkillEdge-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22C73BEE2B0A84370003840C /* SkillEdge-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */,
+				22C73BF12B0A84370003840C /* ContentView.swift */,
+				22C73BF32B0A84390003840C /* Assets.xcassets */,
+				22C73BF52B0A84390003840C /* Preview Content */,
+				22C73C1D2B0A87350003840C /* SplashScreenView.swift */,
+				22C73C1F2B0A8B680003840C /* onBoardingScreen.swift */,
+				22C73C232B0A91240003840C /* LoginScreen.swift */,
+			);
+			path = "SkillEdge-iOS";
+			sourceTree = "<group>";
+		};
+		22C73BF52B0A84390003840C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22C73BF62B0A84390003840C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22C73BFF2B0A84390003840C /* SkillEdge-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				22C73C002B0A84390003840C /* SkillEdge_iOSTests.swift */,
+			);
+			path = "SkillEdge-iOSTests";
+			sourceTree = "<group>";
+		};
+		22C73C092B0A84390003840C /* SkillEdge-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22C73C0A2B0A84390003840C /* SkillEdge_iOSUITests.swift */,
+				22C73C0C2B0A84390003840C /* SkillEdge_iOSUITestsLaunchTests.swift */,
+			);
+			path = "SkillEdge-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22C73BEB2B0A84370003840C /* SkillEdge-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C73C102B0A84390003840C /* Build configuration list for PBXNativeTarget "SkillEdge-iOS" */;
+			buildPhases = (
+				22C73BE82B0A84370003840C /* Sources */,
+				22C73BE92B0A84370003840C /* Frameworks */,
+				22C73BEA2B0A84370003840C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SkillEdge-iOS";
+			productName = "SkillEdge-iOS";
+			productReference = 22C73BEC2B0A84370003840C /* SkillEdge-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22C73BFB2B0A84390003840C /* SkillEdge-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C73C132B0A84390003840C /* Build configuration list for PBXNativeTarget "SkillEdge-iOSTests" */;
+			buildPhases = (
+				22C73BF82B0A84390003840C /* Sources */,
+				22C73BF92B0A84390003840C /* Frameworks */,
+				22C73BFA2B0A84390003840C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C73BFE2B0A84390003840C /* PBXTargetDependency */,
+			);
+			name = "SkillEdge-iOSTests";
+			productName = "SkillEdge-iOSTests";
+			productReference = 22C73BFC2B0A84390003840C /* SkillEdge-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22C73C052B0A84390003840C /* SkillEdge-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C73C162B0A84390003840C /* Build configuration list for PBXNativeTarget "SkillEdge-iOSUITests" */;
+			buildPhases = (
+				22C73C022B0A84390003840C /* Sources */,
+				22C73C032B0A84390003840C /* Frameworks */,
+				22C73C042B0A84390003840C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C73C082B0A84390003840C /* PBXTargetDependency */,
+			);
+			name = "SkillEdge-iOSUITests";
+			productName = "SkillEdge-iOSUITests";
+			productReference = 22C73C062B0A84390003840C /* SkillEdge-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22C73BE42B0A84370003840C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					22C73BEB2B0A84370003840C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					22C73BFB2B0A84390003840C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 22C73BEB2B0A84370003840C;
+					};
+					22C73C052B0A84390003840C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 22C73BEB2B0A84370003840C;
+					};
+				};
+			};
+			buildConfigurationList = 22C73BE72B0A84370003840C /* Build configuration list for PBXProject "SkillEdge-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22C73BE32B0A84370003840C;
+			productRefGroup = 22C73BED2B0A84370003840C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22C73BEB2B0A84370003840C /* SkillEdge-iOS */,
+				22C73BFB2B0A84390003840C /* SkillEdge-iOSTests */,
+				22C73C052B0A84390003840C /* SkillEdge-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22C73BEA2B0A84370003840C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C73BF72B0A84390003840C /* Preview Assets.xcassets in Resources */,
+				22C73C1A2B0A847E0003840C /* .gitignore in Resources */,
+				22C73BF42B0A84390003840C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C73BFA2B0A84390003840C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C73C042B0A84390003840C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22C73BE82B0A84370003840C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C73C202B0A8B680003840C /* onBoardingScreen.swift in Sources */,
+				22C73BF22B0A84370003840C /* ContentView.swift in Sources */,
+				22C73BF02B0A84370003840C /* SkillEdge_iOSApp.swift in Sources */,
+				22C73C1E2B0A87350003840C /* SplashScreenView.swift in Sources */,
+				22C73C242B0A91240003840C /* LoginScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C73BF82B0A84390003840C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C73C012B0A84390003840C /* SkillEdge_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C73C022B0A84390003840C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C73C0B2B0A84390003840C /* SkillEdge_iOSUITests.swift in Sources */,
+				22C73C0D2B0A84390003840C /* SkillEdge_iOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22C73BFE2B0A84390003840C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C73BEB2B0A84370003840C /* SkillEdge-iOS */;
+			targetProxy = 22C73BFD2B0A84390003840C /* PBXContainerItemProxy */;
+		};
+		22C73C082B0A84390003840C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C73BEB2B0A84370003840C /* SkillEdge-iOS */;
+			targetProxy = 22C73C072B0A84390003840C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22C73C0E2B0A84390003840C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22C73C0F2B0A84390003840C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22C73C112B0A84390003840C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkillEdge-iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkillEdge-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22C73C122B0A84390003840C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkillEdge-iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkillEdge-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22C73C142B0A84390003840C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkillEdge-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkillEdge-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkillEdge-iOS";
+			};
+			name = Debug;
+		};
+		22C73C152B0A84390003840C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkillEdge-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkillEdge-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkillEdge-iOS";
+			};
+			name = Release;
+		};
+		22C73C172B0A84390003840C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkillEdge-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SkillEdge-iOS";
+			};
+			name = Debug;
+		};
+		22C73C182B0A84390003840C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkillEdge-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SkillEdge-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22C73BE72B0A84370003840C /* Build configuration list for PBXProject "SkillEdge-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C73C0E2B0A84390003840C /* Debug */,
+				22C73C0F2B0A84390003840C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C73C102B0A84390003840C /* Build configuration list for PBXNativeTarget "SkillEdge-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C73C112B0A84390003840C /* Debug */,
+				22C73C122B0A84390003840C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C73C132B0A84390003840C /* Build configuration list for PBXNativeTarget "SkillEdge-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C73C142B0A84390003840C /* Debug */,
+				22C73C152B0A84390003840C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C73C162B0A84390003840C /* Build configuration list for PBXNativeTarget "SkillEdge-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C73C172B0A84390003840C /* Debug */,
+				22C73C182B0A84390003840C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22C73BE42B0A84370003840C /* Project object */;
+}

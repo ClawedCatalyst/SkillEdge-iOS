@@ -14,7 +14,8 @@ struct SplashScreenView: View {
     
     var body: some View {
         if self.isActive{
-            onBoardingScreen()
+            RootScreenView()
+                .environmentObject(Auth.shared)
         }
         else{
             VStack{

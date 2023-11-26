@@ -60,19 +60,31 @@ struct SignUpScreenView: View {
                     .cornerRadius(10)
                     .padding(.bottom, 10)
                 
-                TextField("Create Password", text: $viewModel.password)
+                SecureField("Create Password", text: $viewModel.password)
                     .padding()
                     .background(Color.black.opacity(0.05))
                     .frame(width: 300, height: 50)
                     .cornerRadius(10)
                     .padding(.bottom, 10)
                 
-                TextField("repeat Password", text: $checkPassword)
+                SecureField("Repeat Password", text: $checkPassword)
                     .padding()
                     .background(Color.black.opacity(0.05))
                     .frame(width: 300, height: 50)
                     .cornerRadius(10)
                     .padding(.bottom, 10)
+                
+             
+                if viewModel.password != checkPassword{
+                    Text("Password does not match")
+                        .font(.system(size: 14))
+                        .foregroundColor(.red)
+                }
+                else{
+                    Text("   ")
+                        .font(.system(size: 14))
+                        .foregroundColor(.red)
+                }
                 
                 Button("Sign Up"){
                     viewModel.SignUp()

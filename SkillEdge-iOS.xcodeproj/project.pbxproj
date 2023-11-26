@@ -22,6 +22,11 @@
 		224484572B13D05500EC5D11 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484562B13D05500EC5D11 /* SignupRequest.swift */; };
 		224484592B13D08E00EC5D11 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484582B13D08E00EC5D11 /* SignupViewModel.swift */; };
 		2244845B2B13D1C700EC5D11 /* OTPScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */; };
+		2244845E2B13E5F100EC5D11 /* OTPView in Frameworks */ = {isa = PBXBuildFile; productRef = 2244845D2B13E5F100EC5D11 /* OTPView */; };
+		224484622B13ECE900EC5D11 /* OTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484612B13ECE900EC5D11 /* OTPResponse.swift */; };
+		224484642B13ECFA00EC5D11 /* OTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484632B13ECFA00EC5D11 /* OTPRequest.swift */; };
+		224484662B13EDC000EC5D11 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484652B13EDC000EC5D11 /* OTPViewModel.swift */; };
+		224484682B13EDEA00EC5D11 /* OTPAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484672B13EDEA00EC5D11 /* OTPAction.swift */; };
 		22C73BF02B0A84370003840C /* SkillEdge_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */; };
 		22C73BF22B0A84370003840C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BF12B0A84370003840C /* ContentView.swift */; };
 		22C73BF42B0A84390003840C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C73BF32B0A84390003840C /* Assets.xcassets */; };
@@ -70,6 +75,10 @@
 		224484562B13D05500EC5D11 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
 		224484582B13D08E00EC5D11 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenView.swift; sourceTree = "<group>"; };
+		224484612B13ECE900EC5D11 /* OTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPResponse.swift; sourceTree = "<group>"; };
+		224484632B13ECFA00EC5D11 /* OTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPRequest.swift; sourceTree = "<group>"; };
+		224484652B13EDC000EC5D11 /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		224484672B13EDEA00EC5D11 /* OTPAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPAction.swift; sourceTree = "<group>"; };
 		22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSApp.swift; sourceTree = "<group>"; };
 		22C73BF12B0A84370003840C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22C73BF32B0A84390003840C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22119C072B11290C00764ABE /* SwiftKeychainWrapper in Frameworks */,
+				2244845E2B13E5F100EC5D11 /* OTPView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				224484542B13CFFC00EC5D11 /* SignupAction.swift */,
+				224484672B13EDEA00EC5D11 /* OTPAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -296,6 +307,8 @@
 			children = (
 				224484522B13CED500EC5D11 /* SignupResponse.swift */,
 				224484562B13D05500EC5D11 /* SignupRequest.swift */,
+				224484612B13ECE900EC5D11 /* OTPResponse.swift */,
+				224484632B13ECFA00EC5D11 /* OTPRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				224484582B13D08E00EC5D11 /* SignupViewModel.swift */,
+				224484652B13EDC000EC5D11 /* OTPViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -377,6 +391,7 @@
 			name = "SkillEdge-iOS";
 			packageProductDependencies = (
 				22119C062B11290C00764ABE /* SwiftKeychainWrapper */,
+				2244845D2B13E5F100EC5D11 /* OTPView */,
 			);
 			productName = "SkillEdge-iOS";
 			productReference = 22119C1A2B112ECD00764ABE /* SkillEdge-iOS.app */;
@@ -452,6 +467,7 @@
 			mainGroup = 22C73BE32B0A84370003840C;
 			packageReferences = (
 				22119C052B11290C00764ABE /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				2244845C2B13E5F100EC5D11 /* XCRemoteSwiftPackageReference "otpview-swiftui" */,
 			);
 			productRefGroup = 22C73BE32B0A84370003840C;
 			projectDirPath = "";
@@ -496,9 +512,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224484682B13EDEA00EC5D11 /* OTPAction.swift in Sources */,
 				224484592B13D08E00EC5D11 /* SignupViewModel.swift in Sources */,
 				22C73C202B0A8B680003840C /* onBoardingScreen.swift in Sources */,
+				224484642B13ECFA00EC5D11 /* OTPRequest.swift in Sources */,
 				22C73BF22B0A84370003840C /* ContentView.swift in Sources */,
+				224484662B13EDC000EC5D11 /* OTPViewModel.swift in Sources */,
 				22119C102B112B6600764ABE /* RootScreenView.swift in Sources */,
 				224484532B13CED500EC5D11 /* SignupResponse.swift in Sources */,
 				22119BFE2B10FFB500764ABE /* LoginResponse.swift in Sources */,
@@ -512,6 +531,7 @@
 				2244845B2B13D1C700EC5D11 /* OTPScreenView.swift in Sources */,
 				22119C0C2B112AB400764ABE /* HomeScreenView.swift in Sources */,
 				22119BF42B10FE2400764ABE /* LoginAction.swift in Sources */,
+				224484622B13ECE900EC5D11 /* OTPResponse.swift in Sources */,
 				224484572B13D05500EC5D11 /* SignupRequest.swift in Sources */,
 				22119BFA2B10FEFF00764ABE /* LoginViewModel.swift in Sources */,
 				22119BFC2B10FF9100764ABE /* LoginRequest.swift in Sources */,
@@ -848,6 +868,14 @@
 				minimumVersion = 4.0.1;
 			};
 		};
+		2244845C2B13E5F100EC5D11 /* XCRemoteSwiftPackageReference "otpview-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mukeshsolanki/otpview-swiftui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -855,6 +883,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22119C052B11290C00764ABE /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
+		};
+		2244845D2B13E5F100EC5D11 /* OTPView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2244845C2B13E5F100EC5D11 /* XCRemoteSwiftPackageReference "otpview-swiftui" */;
+			productName = OTPView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -22,6 +22,7 @@ class SignupViewModel: ObservableObject {
             )
         ).call { response in
             if response.msg == "success"{
+                Auth.shared.setSignUpEmail(email: self.email)
                 self.success.toggle()
             }
         }

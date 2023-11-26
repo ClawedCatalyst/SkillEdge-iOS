@@ -15,9 +15,14 @@ class Auth: ObservableObject {
         var refresh: String?
     }
     
+    struct SignupDetails {
+        var email: String?
+    }
+    
     enum KeychainKey: String {
         case access
         case refresh
+        case email
     }
     
     static let shared: Auth = Auth()
@@ -60,6 +65,16 @@ class Auth: ObservableObject {
         KeychainWrapper.standard.removeObject(forKey: KeychainKey.refresh.rawValue)
         
         loggedIn = false
+    }
+    
+    func setSignUpEmail(email: String){
+        keychain.set(email, forKey: KeychainKey.email.rawValue)
+    }
+    
+    func getSignUpEmail() -> SignupDetails{
+        return SignupDetails(
+            email: keychain.string(forKey: KeychainKey.email.rawValue),
+        )
     }
     
 }

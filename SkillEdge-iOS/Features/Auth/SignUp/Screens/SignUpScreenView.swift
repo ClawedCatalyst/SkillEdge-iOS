@@ -12,7 +12,7 @@ struct SignUpScreenView: View {
     @ObservedObject var viewModel: SignupViewModel = SignupViewModel()
     @State private var checkPassword: String = ""
     @State private var isLoginBtnClick: Bool = false
-
+    
     var body: some View {
         
         if isLoginBtnClick {
@@ -74,7 +74,7 @@ struct SignUpScreenView: View {
                     .cornerRadius(10)
                     .padding(.bottom, 10)
                 
-             
+                
                 if viewModel.password != checkPassword{
                     Text("Password does not match")
                         .font(.system(size: 14))

@@ -17,7 +17,7 @@ struct OTPScreenView: View {
     @State private var otpField: String = ""
     @State private var isTextFieldDisabled: Bool = false
     @ObservedObject var viewModel: OTPViewModel = OTPViewModel()
-      
+    
     var body: some View {
         
         if viewModel.success {

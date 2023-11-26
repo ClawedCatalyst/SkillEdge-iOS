@@ -55,11 +55,11 @@ class Auth: ObservableObject {
     func getAccessToken() -> String? {
         return getCredentials().access
     }
-
+    
     func getRefreshToken() -> String? {
         return getCredentials().refresh
     }
-
+    
     func logout() {
         KeychainWrapper.standard.removeObject(forKey: KeychainKey.access.rawValue)
         KeychainWrapper.standard.removeObject(forKey: KeychainKey.refresh.rawValue)
@@ -73,8 +73,7 @@ class Auth: ObservableObject {
     
     func getSignUpEmail() -> SignupDetails{
         return SignupDetails(
-            email: keychain.string(forKey: KeychainKey.email.rawValue),
+            email: keychain.string(forKey: KeychainKey.email.rawValue)
         )
     }
-    
 }

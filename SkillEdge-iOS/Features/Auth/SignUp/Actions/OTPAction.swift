@@ -14,7 +14,7 @@ struct OTPAction {
     func call(completion: @escaping (OTPResponse) -> Void) {
         
         let url = URL(string: "http://127.0.0.1:8000/api/otp_verify/")
-                
+        
         var request = URLRequest(url: url!)
         request.httpMethod = "post"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

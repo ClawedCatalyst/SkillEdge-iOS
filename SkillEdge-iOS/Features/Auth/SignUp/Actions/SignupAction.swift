@@ -14,7 +14,7 @@ struct SignupAction {
     func call(completion: @escaping (SignupResponse) -> Void) {
         
         let url = URL(string: "http://127.0.0.1:8000/api/new_user_registration/")
-                
+        
         var request = URLRequest(url: url!)
         request.httpMethod = "post"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

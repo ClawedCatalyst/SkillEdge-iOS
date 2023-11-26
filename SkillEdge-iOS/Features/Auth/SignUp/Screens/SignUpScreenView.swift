@@ -1,27 +1,28 @@
 //
-//  LoginScreen.swift
+//  SignUpScreenView.swift
 //  SkillEdge-iOS
 //
-//  Created by suhail ahmad on 20/11/23.
+//  Created by suhail ahmad on 26/11/23.
 //
 
 import SwiftUI
 
+struct SignUpScreenView: View {
+    
+    @ObservedObject var viewModel: SignupViewModel = SignupViewModel()
+    @State private var checkPassword: String = ""
+    @State private var isLoginBtnClick: Bool = false
 
-
-
-struct LoginScreen: View {
-    @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
-    @EnvironmentObject var auth: Auth
-    @State private var isSignUpBtnClicked: Bool = false
     var body: some View {
-        if isSignUpBtnClicked{
-            SignUpScreenView()
+        
+        if isLoginBtnClick {
+            LoginScreen()
         }
-        else if auth.loggedIn{
-            HomeScreenView()
+        else if viewModel.success {
+            OTPScreenView()
         }
         else{
+            
             VStack{
                 HStack{
                     Image("skillEdgeDarkLogo")
@@ -32,35 +33,49 @@ struct LoginScreen: View {
                         .font(.system(size: 30, weight: .medium))
                 }.padding(.top, 50)
                 
-                Spacer()
-                
-                Text("Sign In to your Account")
+                Text("Create your Account")
                     .font(.system(size: 24))
                     .ignoresSafeArea()
                     .padding()
                 
                 
-                TextField("Email", text: $viewModel.email)
+                TextField("Full Name", text: $viewModel.name)
                     .padding()
                     .background(Color.black.opacity(0.05))
                     .frame(width: 300, height: 50)
                     .cornerRadius(10)
+                    .padding(.bottom, 10)
                 
-                SecureField("Password", text: $viewModel.password)
+                TextField("Username", text: $viewModel.user_name)
                     .padding()
                     .background(Color.black.opacity(0.05))
                     .frame(width: 300, height: 50)
                     .cornerRadius(10)
+                    .padding(.bottom, 10)
                 
-                Button("Forget Your Password"){
-                    // TODO: add forget pass API
-                }
-                .frame(alignment: .leading)
-                .ignoresSafeArea()
-                .padding(.bottom, 30)
+                TextField("Email ", text: $viewModel.email)
+                    .padding()
+                    .background(Color.black.opacity(0.05))
+                    .frame(width: 300, height: 50)
+                    .cornerRadius(10)
+                    .padding(.bottom, 10)
                 
-                Button("Sign In"){
-                    viewModel.login()
+                TextField("Create Password", text: $viewModel.password)
+                    .padding()
+                    .background(Color.black.opacity(0.05))
+                    .frame(width: 300, height: 50)
+                    .cornerRadius(10)
+                    .padding(.bottom, 10)
+                
+                TextField("repeat Password", text: $checkPassword)
+                    .padding()
+                    .background(Color.black.opacity(0.05))
+                    .frame(width: 300, height: 50)
+                    .cornerRadius(10)
+                    .padding(.bottom, 10)
+                
+                Button("Sign Up"){
+                    viewModel.SignUp()
                 }
                 .frame(width: 300, height: 50)
                 .background(Color(red: 0.0039215686, green: 0.7725490196078432, blue: 0.6509803921568628))
@@ -70,9 +85,9 @@ struct LoginScreen: View {
                 
                 Spacer()
                 
-                Text("Don’t have an account? ")
-                Button("Sign Up"){
-                    isSignUpBtnClicked.toggle()
+                Text("Already have an account? ")
+                Button("Sign In"){
+                    isLoginBtnClick.toggle()
                 }
                 .frame(width: 300, height: 50)
                 .background(Color.white)
@@ -85,12 +100,12 @@ struct LoginScreen: View {
                 )
                 
                 Spacer()
+                
             }
         }
-        
     }
 }
 
 #Preview {
-    LoginScreen()
+    SignUpScreenView()
 }

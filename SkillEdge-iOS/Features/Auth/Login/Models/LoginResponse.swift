@@ -8,7 +8,10 @@
 import Foundation
 
 struct LoginResponse: Decodable {
-    let email: String
-    let access: String
+    let token: token
+}
+
+struct token: Decodable {
     let refresh: String
+    let access: String
 }

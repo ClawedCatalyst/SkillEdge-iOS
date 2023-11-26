@@ -16,6 +16,12 @@
 		22119C0C2B112AB400764ABE /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119C0B2B112AB400764ABE /* HomeScreenView.swift */; };
 		22119C102B112B6600764ABE /* RootScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119C0F2B112B6600764ABE /* RootScreenView.swift */; };
 		22119C212B11318400764ABE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119C202B11318400764ABE /* HomeViewModel.swift */; };
+		2244844C2B13C28600EC5D11 /* SignUpScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244844B2B13C28600EC5D11 /* SignUpScreenView.swift */; };
+		224484532B13CED500EC5D11 /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484522B13CED500EC5D11 /* SignupResponse.swift */; };
+		224484552B13CFFC00EC5D11 /* SignupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484542B13CFFC00EC5D11 /* SignupAction.swift */; };
+		224484572B13D05500EC5D11 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484562B13D05500EC5D11 /* SignupRequest.swift */; };
+		224484592B13D08E00EC5D11 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484582B13D08E00EC5D11 /* SignupViewModel.swift */; };
+		2244845B2B13D1C700EC5D11 /* OTPScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */; };
 		22C73BF02B0A84370003840C /* SkillEdge_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */; };
 		22C73BF22B0A84370003840C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BF12B0A84370003840C /* ContentView.swift */; };
 		22C73BF42B0A84390003840C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C73BF32B0A84390003840C /* Assets.xcassets */; };
@@ -58,6 +64,12 @@
 		22119C1B2B112ECD00764ABE /* SkillEdge-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22119C1C2B112ECD00764ABE /* SkillEdge-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22119C202B11318400764ABE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2244844B2B13C28600EC5D11 /* SignUpScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenView.swift; sourceTree = "<group>"; };
+		224484522B13CED500EC5D11 /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
+		224484542B13CFFC00EC5D11 /* SignupAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAction.swift; sourceTree = "<group>"; };
+		224484562B13D05500EC5D11 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		224484582B13D08E00EC5D11 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenView.swift; sourceTree = "<group>"; };
 		22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSApp.swift; sourceTree = "<group>"; };
 		22C73BF12B0A84370003840C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22C73BF32B0A84390003840C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +132,7 @@
 		22119BF52B10FEAA00764ABE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				224484492B13C1D500EC5D11 /* SignUp */,
 				22119BF62B10FEB800764ABE /* Login */,
 			);
 			path = Auth;
@@ -246,6 +259,51 @@
 			isa = PBXGroup;
 			children = (
 				22119BF92B10FEFF00764ABE /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		224484492B13C1D500EC5D11 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2244844F2B13CC8500EC5D11 /* ViewModels */,
+				2244844E2B13CC7D00EC5D11 /* Models */,
+				2244844D2B13CC6900EC5D11 /* Actions */,
+				2244844A2B13C26E00EC5D11 /* Screens */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		2244844A2B13C26E00EC5D11 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2244844B2B13C28600EC5D11 /* SignUpScreenView.swift */,
+				2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2244844D2B13CC6900EC5D11 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				224484542B13CFFC00EC5D11 /* SignupAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		2244844E2B13CC7D00EC5D11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				224484522B13CED500EC5D11 /* SignupResponse.swift */,
+				224484562B13D05500EC5D11 /* SignupRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2244844F2B13CC8500EC5D11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				224484582B13D08E00EC5D11 /* SignupViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -438,17 +496,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224484592B13D08E00EC5D11 /* SignupViewModel.swift in Sources */,
 				22C73C202B0A8B680003840C /* onBoardingScreen.swift in Sources */,
 				22C73BF22B0A84370003840C /* ContentView.swift in Sources */,
 				22119C102B112B6600764ABE /* RootScreenView.swift in Sources */,
+				224484532B13CED500EC5D11 /* SignupResponse.swift in Sources */,
 				22119BFE2B10FFB500764ABE /* LoginResponse.swift in Sources */,
+				2244844C2B13C28600EC5D11 /* SignUpScreenView.swift in Sources */,
 				22C73BF02B0A84370003840C /* SkillEdge_iOSApp.swift in Sources */,
 				22C73C1E2B0A87350003840C /* SplashScreenView.swift in Sources */,
 				22119C012B111E3700764ABE /* Auth.swift in Sources */,
+				224484552B13CFFC00EC5D11 /* SignupAction.swift in Sources */,
 				22C73C242B0A91240003840C /* LoginScreen.swift in Sources */,
 				22119C212B11318400764ABE /* HomeViewModel.swift in Sources */,
+				2244845B2B13D1C700EC5D11 /* OTPScreenView.swift in Sources */,
 				22119C0C2B112AB400764ABE /* HomeScreenView.swift in Sources */,
 				22119BF42B10FE2400764ABE /* LoginAction.swift in Sources */,
+				224484572B13D05500EC5D11 /* SignupRequest.swift in Sources */,
 				22119BFA2B10FEFF00764ABE /* LoginViewModel.swift in Sources */,
 				22119BFC2B10FF9100764ABE /* LoginRequest.swift in Sources */,
 			);

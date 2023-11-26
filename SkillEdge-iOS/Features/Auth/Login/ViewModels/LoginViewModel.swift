@@ -20,8 +20,8 @@ class LoginViewModel: ObservableObject {
             )
         ).call { response in
             Auth.shared.setCredentials(
-                access: response.access,
-                refresh: response.refresh
+                access: response.token.access,
+                refresh: response.token.refresh
             )
         }
     }

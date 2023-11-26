@@ -1,20 +1,19 @@
 //
-//  LoginAction.swift
+//  SignupAction.swift
 //  SkillEdge-iOS
 //
-//  Created by suhail ahmad on 24/11/23.
+//  Created by suhail ahmad on 27/11/23.
 //
 
 import Foundation
 
-
-struct LoginAction {
+struct SignupAction {
     
-    var parameters: LoginRequest
+    var parameters: SignupRequest
     
-    func call(completion: @escaping (LoginResponse) -> Void) {
+    func call(completion: @escaping (SignupResponse) -> Void) {
         
-        let url = URL(string: "http://127.0.0.1:8000/api/login/")
+        let url = URL(string: "http://127.0.0.1:8000/api/new_user_registration/")
                 
         var request = URLRequest(url: url!)
         request.httpMethod = "post"
@@ -30,7 +29,7 @@ struct LoginAction {
         
         let task = URLSession.shared.dataTask(with: request) { data, _, error in
             if let data = data {
-                let response = try? JSONDecoder().decode(LoginResponse.self, from: data)
+                let response = try? JSONDecoder().decode(SignupResponse.self, from: data)
                 
                 if let response = response {
                     completion(response)
@@ -47,4 +46,3 @@ struct LoginAction {
         task.resume()
     }
 }
-

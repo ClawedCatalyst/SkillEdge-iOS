@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22119BF42B10FE2400764ABE /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119BF32B10FE2400764ABE /* LoginAction.swift */; };
+		22119BFA2B10FEFF00764ABE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119BF92B10FEFF00764ABE /* LoginViewModel.swift */; };
+		22119BFC2B10FF9100764ABE /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119BFB2B10FF9100764ABE /* LoginRequest.swift */; };
+		22119BFE2B10FFB500764ABE /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119BFD2B10FFB500764ABE /* LoginResponse.swift */; };
+		22119C012B111E3700764ABE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119C002B111E3700764ABE /* Auth.swift */; };
+		22119C072B11290C00764ABE /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 22119C062B11290C00764ABE /* SwiftKeychainWrapper */; };
+		22119C0C2B112AB400764ABE /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119C0B2B112AB400764ABE /* HomeScreenView.swift */; };
+		22119C102B112B6600764ABE /* RootScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119C0F2B112B6600764ABE /* RootScreenView.swift */; };
+		22119C212B11318400764ABE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22119C202B11318400764ABE /* HomeViewModel.swift */; };
+		2244844C2B13C28600EC5D11 /* SignUpScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244844B2B13C28600EC5D11 /* SignUpScreenView.swift */; };
+		224484532B13CED500EC5D11 /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484522B13CED500EC5D11 /* SignupResponse.swift */; };
+		224484552B13CFFC00EC5D11 /* SignupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484542B13CFFC00EC5D11 /* SignupAction.swift */; };
+		224484572B13D05500EC5D11 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484562B13D05500EC5D11 /* SignupRequest.swift */; };
+		224484592B13D08E00EC5D11 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484582B13D08E00EC5D11 /* SignupViewModel.swift */; };
+		2244845B2B13D1C700EC5D11 /* OTPScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */; };
+		2244845E2B13E5F100EC5D11 /* OTPView in Frameworks */ = {isa = PBXBuildFile; productRef = 2244845D2B13E5F100EC5D11 /* OTPView */; };
+		224484622B13ECE900EC5D11 /* OTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484612B13ECE900EC5D11 /* OTPResponse.swift */; };
+		224484642B13ECFA00EC5D11 /* OTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484632B13ECFA00EC5D11 /* OTPRequest.swift */; };
+		224484662B13EDC000EC5D11 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484652B13EDC000EC5D11 /* OTPViewModel.swift */; };
+		224484682B13EDEA00EC5D11 /* OTPAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224484672B13EDEA00EC5D11 /* OTPAction.swift */; };
 		22C73BF02B0A84370003840C /* SkillEdge_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */; };
 		22C73BF22B0A84370003840C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C73BF12B0A84370003840C /* ContentView.swift */; };
 		22C73BF42B0A84390003840C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C73BF32B0A84390003840C /* Assets.xcassets */; };
@@ -38,14 +58,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22C73BEC2B0A84370003840C /* SkillEdge-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkillEdge-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22119BF32B10FE2400764ABE /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		22119BF92B10FEFF00764ABE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		22119BFB2B10FF9100764ABE /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		22119BFD2B10FFB500764ABE /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		22119C002B111E3700764ABE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		22119C0B2B112AB400764ABE /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		22119C0F2B112B6600764ABE /* RootScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreenView.swift; sourceTree = "<group>"; };
+		22119C1A2B112ECD00764ABE /* SkillEdge-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkillEdge-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22119C1B2B112ECD00764ABE /* SkillEdge-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22119C1C2B112ECD00764ABE /* SkillEdge-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22119C202B11318400764ABE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2244844B2B13C28600EC5D11 /* SignUpScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenView.swift; sourceTree = "<group>"; };
+		224484522B13CED500EC5D11 /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
+		224484542B13CFFC00EC5D11 /* SignupAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAction.swift; sourceTree = "<group>"; };
+		224484562B13D05500EC5D11 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		224484582B13D08E00EC5D11 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenView.swift; sourceTree = "<group>"; };
+		224484612B13ECE900EC5D11 /* OTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPResponse.swift; sourceTree = "<group>"; };
+		224484632B13ECFA00EC5D11 /* OTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPRequest.swift; sourceTree = "<group>"; };
+		224484652B13EDC000EC5D11 /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		224484672B13EDEA00EC5D11 /* OTPAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPAction.swift; sourceTree = "<group>"; };
 		22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSApp.swift; sourceTree = "<group>"; };
 		22C73BF12B0A84370003840C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22C73BF32B0A84390003840C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22C73BF62B0A84390003840C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		22C73BFC2B0A84390003840C /* SkillEdge-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C73C002B0A84390003840C /* SkillEdge_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSTests.swift; sourceTree = "<group>"; };
-		22C73C062B0A84390003840C /* SkillEdge-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillEdge-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C73C0A2B0A84390003840C /* SkillEdge_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSUITests.swift; sourceTree = "<group>"; };
 		22C73C0C2B0A84390003840C /* SkillEdge_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEdge_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22C73C192B0A847E0003840C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -59,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22119C072B11290C00764ABE /* SwiftKeychainWrapper in Frameworks */,
+				2244845E2B13E5F100EC5D11 /* OTPView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +119,209 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22119BF12B10FDE400764ABE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				22119C242B1133C700764ABE /* OnBoarding */,
+				22119C222B11339E00764ABE /* SplashScreen */,
+				22119C0D2B112B4900764ABE /* Root */,
+				22119C082B112A7E00764ABE /* StudentSide */,
+				22119BF52B10FEAA00764ABE /* Auth */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		22119BF22B10FE1100764ABE /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				22119BF32B10FE2400764ABE /* LoginAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		22119BF52B10FEAA00764ABE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				224484492B13C1D500EC5D11 /* SignUp */,
+				22119BF62B10FEB800764ABE /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		22119BF62B10FEB800764ABE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22119C272B1133F100764ABE /* ViewModels */,
+				22119BF82B10FEEA00764ABE /* Models */,
+				22119BF72B10FECA00764ABE /* Screens */,
+				22119BF22B10FE1100764ABE /* Actions */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		22119BF72B10FECA00764ABE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				22C73C232B0A91240003840C /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22119BF82B10FEEA00764ABE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22119BFB2B10FF9100764ABE /* LoginRequest.swift */,
+				22119BFD2B10FFB500764ABE /* LoginResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22119BFF2B111DF900764ABE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				22119C002B111E3700764ABE /* Auth.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		22119C082B112A7E00764ABE /* StudentSide */ = {
+			isa = PBXGroup;
+			children = (
+				22119C092B112A8B00764ABE /* Dashboard */,
+			);
+			path = StudentSide;
+			sourceTree = "<group>";
+		};
+		22119C092B112A8B00764ABE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				22119C1F2B11316900764ABE /* ViewModels */,
+				22119C0A2B112A9A00764ABE /* Screens */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		22119C0A2B112A9A00764ABE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				22119C0B2B112AB400764ABE /* HomeScreenView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22119C0D2B112B4900764ABE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				22119C0E2B112B5200764ABE /* Screens */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		22119C0E2B112B5200764ABE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				22119C0F2B112B6600764ABE /* RootScreenView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22119C1F2B11316900764ABE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				22119C202B11318400764ABE /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		22119C222B11339E00764ABE /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				22119C232B1133AB00764ABE /* Screens */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		22119C232B1133AB00764ABE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				22C73C1D2B0A87350003840C /* SplashScreenView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22119C242B1133C700764ABE /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				22119C252B1133CF00764ABE /* Screens */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		22119C252B1133CF00764ABE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				22C73C1F2B0A8B680003840C /* onBoardingScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22119C272B1133F100764ABE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				22119BF92B10FEFF00764ABE /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		224484492B13C1D500EC5D11 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2244844F2B13CC8500EC5D11 /* ViewModels */,
+				2244844E2B13CC7D00EC5D11 /* Models */,
+				2244844D2B13CC6900EC5D11 /* Actions */,
+				2244844A2B13C26E00EC5D11 /* Screens */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		2244844A2B13C26E00EC5D11 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2244844B2B13C28600EC5D11 /* SignUpScreenView.swift */,
+				2244845A2B13D1C700EC5D11 /* OTPScreenView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2244844D2B13CC6900EC5D11 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				224484542B13CFFC00EC5D11 /* SignupAction.swift */,
+				224484672B13EDEA00EC5D11 /* OTPAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		2244844E2B13CC7D00EC5D11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				224484522B13CED500EC5D11 /* SignupResponse.swift */,
+				224484562B13D05500EC5D11 /* SignupRequest.swift */,
+				224484612B13ECE900EC5D11 /* OTPResponse.swift */,
+				224484632B13ECFA00EC5D11 /* OTPRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2244844F2B13CC8500EC5D11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				224484582B13D08E00EC5D11 /* SignupViewModel.swift */,
+				224484652B13EDC000EC5D11 /* OTPViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		22C73BE32B0A84370003840C = {
 			isa = PBXGroup;
 			children = (
@@ -86,30 +329,21 @@
 				22C73BEE2B0A84370003840C /* SkillEdge-iOS */,
 				22C73BFF2B0A84390003840C /* SkillEdge-iOSTests */,
 				22C73C092B0A84390003840C /* SkillEdge-iOSUITests */,
-				22C73BED2B0A84370003840C /* Products */,
+				22119C1A2B112ECD00764ABE /* SkillEdge-iOS.app */,
+				22119C1B2B112ECD00764ABE /* SkillEdge-iOSTests.xctest */,
+				22119C1C2B112ECD00764ABE /* SkillEdge-iOSUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		22C73BED2B0A84370003840C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				22C73BEC2B0A84370003840C /* SkillEdge-iOS.app */,
-				22C73BFC2B0A84390003840C /* SkillEdge-iOSTests.xctest */,
-				22C73C062B0A84390003840C /* SkillEdge-iOSUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		22C73BEE2B0A84370003840C /* SkillEdge-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				22119BFF2B111DF900764ABE /* Utilities */,
+				22119BF12B10FDE400764ABE /* Features */,
 				22C73BEF2B0A84370003840C /* SkillEdge_iOSApp.swift */,
 				22C73BF12B0A84370003840C /* ContentView.swift */,
 				22C73BF32B0A84390003840C /* Assets.xcassets */,
 				22C73BF52B0A84390003840C /* Preview Content */,
-				22C73C1D2B0A87350003840C /* SplashScreenView.swift */,
-				22C73C1F2B0A8B680003840C /* onBoardingScreen.swift */,
-				22C73C232B0A91240003840C /* LoginScreen.swift */,
 			);
 			path = "SkillEdge-iOS";
 			sourceTree = "<group>";
@@ -155,8 +389,12 @@
 			dependencies = (
 			);
 			name = "SkillEdge-iOS";
+			packageProductDependencies = (
+				22119C062B11290C00764ABE /* SwiftKeychainWrapper */,
+				2244845D2B13E5F100EC5D11 /* OTPView */,
+			);
 			productName = "SkillEdge-iOS";
-			productReference = 22C73BEC2B0A84370003840C /* SkillEdge-iOS.app */;
+			productReference = 22119C1A2B112ECD00764ABE /* SkillEdge-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		22C73BFB2B0A84390003840C /* SkillEdge-iOSTests */ = {
@@ -174,7 +412,7 @@
 			);
 			name = "SkillEdge-iOSTests";
 			productName = "SkillEdge-iOSTests";
-			productReference = 22C73BFC2B0A84390003840C /* SkillEdge-iOSTests.xctest */;
+			productReference = 22119C1B2B112ECD00764ABE /* SkillEdge-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		22C73C052B0A84390003840C /* SkillEdge-iOSUITests */ = {
@@ -192,7 +430,7 @@
 			);
 			name = "SkillEdge-iOSUITests";
 			productName = "SkillEdge-iOSUITests";
-			productReference = 22C73C062B0A84390003840C /* SkillEdge-iOSUITests.xctest */;
+			productReference = 22119C1C2B112ECD00764ABE /* SkillEdge-iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +465,11 @@
 				Base,
 			);
 			mainGroup = 22C73BE32B0A84370003840C;
-			productRefGroup = 22C73BED2B0A84370003840C /* Products */;
+			packageReferences = (
+				22119C052B11290C00764ABE /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				2244845C2B13E5F100EC5D11 /* XCRemoteSwiftPackageReference "otpview-swiftui" */,
+			);
+			productRefGroup = 22C73BE32B0A84370003840C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -270,11 +512,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224484682B13EDEA00EC5D11 /* OTPAction.swift in Sources */,
+				224484592B13D08E00EC5D11 /* SignupViewModel.swift in Sources */,
 				22C73C202B0A8B680003840C /* onBoardingScreen.swift in Sources */,
+				224484642B13ECFA00EC5D11 /* OTPRequest.swift in Sources */,
 				22C73BF22B0A84370003840C /* ContentView.swift in Sources */,
+				224484662B13EDC000EC5D11 /* OTPViewModel.swift in Sources */,
+				22119C102B112B6600764ABE /* RootScreenView.swift in Sources */,
+				224484532B13CED500EC5D11 /* SignupResponse.swift in Sources */,
+				22119BFE2B10FFB500764ABE /* LoginResponse.swift in Sources */,
+				2244844C2B13C28600EC5D11 /* SignUpScreenView.swift in Sources */,
 				22C73BF02B0A84370003840C /* SkillEdge_iOSApp.swift in Sources */,
 				22C73C1E2B0A87350003840C /* SplashScreenView.swift in Sources */,
+				22119C012B111E3700764ABE /* Auth.swift in Sources */,
+				224484552B13CFFC00EC5D11 /* SignupAction.swift in Sources */,
 				22C73C242B0A91240003840C /* LoginScreen.swift in Sources */,
+				22119C212B11318400764ABE /* HomeViewModel.swift in Sources */,
+				2244845B2B13D1C700EC5D11 /* OTPScreenView.swift in Sources */,
+				22119C0C2B112AB400764ABE /* HomeScreenView.swift in Sources */,
+				22119BF42B10FE2400764ABE /* LoginAction.swift in Sources */,
+				224484622B13ECE900EC5D11 /* OTPResponse.swift in Sources */,
+				224484572B13D05500EC5D11 /* SignupRequest.swift in Sources */,
+				22119BFA2B10FEFF00764ABE /* LoginViewModel.swift in Sources */,
+				22119BFC2B10FF9100764ABE /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +858,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22119C052B11290C00764ABE /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		2244845C2B13E5F100EC5D11 /* XCRemoteSwiftPackageReference "otpview-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mukeshsolanki/otpview-swiftui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22119C062B11290C00764ABE /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22119C052B11290C00764ABE /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		2244845D2B13E5F100EC5D11 /* OTPView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2244845C2B13E5F100EC5D11 /* XCRemoteSwiftPackageReference "otpview-swiftui" */;
+			productName = OTPView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22C73BE42B0A84370003840C /* Project object */;
 }

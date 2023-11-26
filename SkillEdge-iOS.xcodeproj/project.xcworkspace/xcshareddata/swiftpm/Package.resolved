@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "otpview-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mukeshsolanki/otpview-swiftui",
+      "state" : {
+        "revision" : "a4b5e210ffce6ff5b7889c212939df25a3c24dd4",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swiftkeychainwrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jrendel/SwiftKeychainWrapper.git",
+      "state" : {
+        "revision" : "185a3165346a03767101c4f62e9a545a0fe0530f",
+        "version" : "4.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

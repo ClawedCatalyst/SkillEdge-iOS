@@ -12,6 +12,7 @@ class OTPViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var otp: String = ""
     @Published var success: Bool = false
+    @Published var isLoading: Bool = false
     
     func otpfunc() {
         OTPAction(
@@ -23,6 +24,7 @@ class OTPViewModel: ObservableObject {
                     refresh: response.token.refresh
                 )
                 self.success.toggle()
+                self.isLoading.toggle()
             }
         }
     }

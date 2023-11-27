@@ -11,6 +11,7 @@ class LoginViewModel: ObservableObject {
     
     @Published var email: String = ""
     @Published var password: String = ""
+    @Published var isLoading: Bool = false
     
     func login() {
         LoginAction(
@@ -23,6 +24,7 @@ class LoginViewModel: ObservableObject {
                 access: response.token.access,
                 refresh: response.token.refresh
             )
+            self.isLoading.toggle()
         }
     }
 }

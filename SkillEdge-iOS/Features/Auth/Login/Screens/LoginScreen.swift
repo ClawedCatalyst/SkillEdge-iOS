@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-
-
-
 struct LoginScreen: View {
     @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
     @EnvironmentObject var auth: Auth

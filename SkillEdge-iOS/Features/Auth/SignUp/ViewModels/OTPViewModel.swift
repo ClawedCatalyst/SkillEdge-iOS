@@ -17,7 +17,6 @@ class OTPViewModel: ObservableObject {
         OTPAction(
             parameters: OTPRequest(email: email, otp: otp)
         ).call { response in
-            print(response)
             if response.msg == "verification Successfull"{
                 Auth.shared.setCredentials(
                     access: response.token.access,

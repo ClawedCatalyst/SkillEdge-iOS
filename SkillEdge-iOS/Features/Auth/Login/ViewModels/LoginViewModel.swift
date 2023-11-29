@@ -11,6 +11,8 @@ class LoginViewModel: ObservableObject {
     
     @Published var email: String = ""
     @Published var password: String = ""
+    @Published var isLoading: Bool = false
+    @Published var error: APIError?
     
     func login() {
         LoginAction(
@@ -19,10 +21,16 @@ class LoginViewModel: ObservableObject {
                 password: password
             )
         ).call { response in
+            self.error = nil
+            
             Auth.shared.setCredentials(
                 access: response.token.access,
                 refresh: response.token.refresh
             )
+            self.isLoading.toggle()
+        } failure: { error in
+            self.error = error
+            self.isLoading.toggle()
         }
     }
 }

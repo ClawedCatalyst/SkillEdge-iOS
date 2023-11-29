@@ -1,5 +1,5 @@
 //
-//  OTPAction.swift
+//  ResetOTPAction.swift
 //  SkillEdge-iOS
 //
 //  Created by suhail ahmad on 27/11/23.
@@ -7,22 +7,22 @@
 
 import Foundation
 
-struct OTPAction {
-    let path = "/otp_verify/"
+struct ResetOTPAction {
+    let path = "/resend_otp/"
     let method: HTTPMethod = .post
-    var parameters: OTPRequest
+    var parameters: ResetOTPRequest
     
     func call(
-        completion: @escaping (OTPResponse) -> Void,
+        completion: @escaping (ResetOTPResponse) -> Void,
         failure: @escaping (APIError) -> Void
     ) {
-        APIRequest<OTPRequest, OTPResponse>.call(
+        APIRequest<ResetOTPRequest, ResetOTPResponse>.call(
             path: path,
             method: .post,
             parameters: parameters
         ) { data in
             if let response = try? JSONDecoder().decode(
-                OTPResponse.self,
+                ResetOTPResponse.self,
                 from: data
             ) {
                 completion(response)
@@ -34,3 +34,4 @@ struct OTPAction {
         }
     }
 }
+

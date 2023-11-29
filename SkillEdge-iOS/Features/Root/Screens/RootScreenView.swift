@@ -14,7 +14,7 @@ struct RootScreenView: View {
         if auth.loggedIn {
             HomeScreenView()
         } else {
-            onBoardingScreen()
+            LoginScreen()
         }
     }
 }

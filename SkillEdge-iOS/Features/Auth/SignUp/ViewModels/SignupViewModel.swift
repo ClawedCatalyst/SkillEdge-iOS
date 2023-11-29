@@ -14,7 +14,6 @@ class SignupViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var success = false
-    @Published var isLoading = false
     
     func SignUp() {
         SignupAction(
@@ -25,7 +24,6 @@ class SignupViewModel: ObservableObject {
             if response.msg == "success"{
                 Auth.shared.setSignUpEmail(email: self.email)
                 self.success.toggle()
-                self.isLoading.toggle()
             }
         }
     }

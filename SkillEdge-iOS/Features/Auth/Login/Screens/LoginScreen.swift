@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct LoginScreen: View {
     @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
     @EnvironmentObject var auth: Auth
     @State private var isSignUpBtnClicked: Bool = false
+    @State private var isErrorToast: Bool = false
+    
     var body: some View {
         if isSignUpBtnClicked{
             SignUpScreenView()
@@ -60,6 +63,9 @@ struct LoginScreen: View {
                     Button("Sign In"){
                         viewModel.login()
                         viewModel.isLoading.toggle()
+                        if viewModel.error != nil {
+                            isErrorToast.toggle()
+                        }
                     }
                     .frame(width: 300, height: 50)
                     .background(Color(red: 0.0039215686, green: 0.7725490196078432, blue: 0.6509803921568628))
@@ -84,10 +90,13 @@ struct LoginScreen: View {
                     )
                     
                     Spacer()
+                    
                 }
                 if viewModel.isLoading {
                     LoadingScreenView()
                 }
+            }.toast(isPresenting: $isErrorToast){
+                AlertToast(displayMode: .hud, type: .error(.red), title: "Invalid credentials")
             }
         }
     }

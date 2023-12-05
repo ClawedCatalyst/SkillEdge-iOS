@@ -15,6 +15,7 @@ class SignupViewModel: ObservableObject {
     @Published var password: String = ""
     @Published var success = false
     @Published var isLoading = false
+    @Published var error: APIError?
     
     func SignUp() {
         SignupAction(
@@ -27,6 +28,10 @@ class SignupViewModel: ObservableObject {
                 self.success.toggle()
                 self.isLoading.toggle()
             }
+        }failure: { error in
+            
+            self.error = error
+            self.isLoading.toggle()
         }
     }
 }

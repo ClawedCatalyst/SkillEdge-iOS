@@ -22,13 +22,14 @@ class LoginViewModel: ObservableObject {
             )
         ).call { response in
             self.error = nil
-            
+    
             Auth.shared.setCredentials(
                 access: response.token.access,
                 refresh: response.token.refresh
             )
             self.isLoading.toggle()
         } failure: { error in
+            print(type(of: error))
             self.error = error
             self.isLoading.toggle()
         }

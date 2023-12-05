@@ -13,6 +13,7 @@ class OTPViewModel: ObservableObject {
     @Published var otp: String = ""
     @Published var success: Bool = false
     @Published var isLoading: Bool = false
+    @Published var error: APIError?
     
     func otpfunc() {
         OTPAction(
@@ -26,6 +27,10 @@ class OTPViewModel: ObservableObject {
                 self.success.toggle()
                 self.isLoading.toggle()
             }
+        }failure: { error in
+            
+            self.error = error
+            self.isLoading.toggle()
         }
     }
 }

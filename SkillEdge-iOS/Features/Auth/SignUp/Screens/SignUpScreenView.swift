@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct SignUpScreenView: View {
     
     @ObservedObject var viewModel: SignupViewModel = SignupViewModel()
     @State private var checkPassword: String = ""
     @State private var isLoginBtnClick: Bool = false
+    @State private var isErrorToast: Bool = false
+    @State private var isAllField: Bool = false
+    @State private var isNecessaryField: Bool = false
+    @FocusState private var isTextFieldFocused: Bool
     
     var body: some View {
         
@@ -44,12 +49,18 @@ struct SignUpScreenView: View {
                         .background(Color.black.opacity(0.05))
                         .frame(width: 300, height: 50)
                         .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(isNecessaryField && !isTextFieldFocused  ? Color.red : Color.clear, lineWidth: 1)
+                        )
                         .padding(.bottom, 10)
+                        .focused($isTextFieldFocused)
                     
                     TextField("Username", text: $viewModel.user_name)
                         .padding()
                         .background(Color.black.opacity(0.05))
                         .frame(width: 300, height: 50)
+                        .border(isNecessaryField ? Color.red : Color.clear, width: 1)
                         .cornerRadius(10)
                         .padding(.bottom, 10)
                     
@@ -57,6 +68,7 @@ struct SignUpScreenView: View {
                         .padding()
                         .background(Color.black.opacity(0.05))
                         .frame(width: 300, height: 50)
+                        .border(isNecessaryField ? Color.red : Color.clear, width: 1)
                         .cornerRadius(10)
                         .padding(.bottom, 10)
                     
@@ -64,6 +76,7 @@ struct SignUpScreenView: View {
                         .padding()
                         .background(Color.black.opacity(0.05))
                         .frame(width: 300, height: 50)
+                        .border(isNecessaryField ? Color.red : Color.clear, width: 1)
                         .cornerRadius(10)
                         .padding(.bottom, 10)
                     
@@ -71,6 +84,7 @@ struct SignUpScreenView: View {
                         .padding()
                         .background(Color.black.opacity(0.05))
                         .frame(width: 300, height: 50)
+                        .border(isNecessaryField ? Color.red : Color.clear, width: 1)
                         .cornerRadius(10)
                         .padding(.bottom, 10)
                     
@@ -86,10 +100,22 @@ struct SignUpScreenView: View {
                             .foregroundColor(.red)
                     }
                     
+    
                     Button("Sign Up"){
                         viewModel.SignUp()
                         viewModel.isLoading.toggle()
-                    }
+                        
+                        if viewModel.email == "" || viewModel.password == "" || viewModel.name == "" || viewModel.user_name == "" {
+                            viewModel.errorMessage = "Please fill necessary details "
+                            isErrorToast.toggle()
+                            isNecessaryField.toggle()
+                            viewModel.isLoading.toggle()
+                        }
+                        
+                        if viewModel.error != nil {
+                            isErrorToast.toggle()
+                        }
+                    }.disabled(isAllField)
                     .frame(width: 300, height: 50)
                     .background(Color(red: 0.0039215686, green: 0.7725490196078432, blue: 0.6509803921568628))
                     .foregroundColor(.white)
@@ -117,6 +143,8 @@ struct SignUpScreenView: View {
                 if viewModel.isLoading {
                     LoadingScreenView()
                 }
+            }.toast(isPresenting: $isErrorToast){
+                return AlertToast(displayMode: .hud, type: .error(.red), title: viewModel.errorMessage)
             }
         }
     }

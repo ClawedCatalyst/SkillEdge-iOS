@@ -9,7 +9,7 @@ import Foundation
 
 
 struct LoginAction {
-    let path = "/login"
+    let path = "/login/"
     let method: HTTPMethod = .post
     var parameters: LoginRequest
     

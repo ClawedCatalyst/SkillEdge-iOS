@@ -27,7 +27,7 @@ class APIRequest<Parameters: Encodable, Model: Decodable> {
         failure: @escaping FailureHandler
     ) {
         
-        let url = URL(string: "http://127.0.0.1:8000/api \(path)")
+        let url = URL(string: "http://127.0.0.1:8000/api\(path)")
         
         var request = URLRequest(url: url!)
         request.httpMethod = method.rawValue
